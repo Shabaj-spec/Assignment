@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+	 <title>Raad's Gameshop
+     </title>
+		<link rel="icon" type="image" href="Favicon.jpeg">
+		<link href="stylesheet.css" rel="stylesheet">
+</head>
+<body>
+	<p>Here are three color options you can choose for the background color.</p>
+	<button type="color" onclick="changeColor('#D0FA58')">Color1</button>
+	<button type="color" onclick="changeColor('#A9F5F2')">Color2</button>
+	<button type="color" onclick="changeColor('#F7819F')">Color3</button>
+	<p class="background"><b>Here is my favorite game track:</b></p>	
+	<audio src="Game.mp3" type="audio/mp3" controls>
+	</audio>
+	<div class="image">
+	<p><b>Now I want to add some images of my favorite games:</b></p>
+	<img src="Call of duty.jpeg" alt="Game poster1" width="510"
+	height="303"><br>
+	<img src="Sleeping dogs.jpeg" alt="Game poster2" width="500" height="300"><br>
+	<img src="Assassins creed Mirage.jpeg" alt="Game poster3" width="600" height="320">
+	</div>
+	<p><b>Everyone may ask what the price of these games is, so I am giving an overview of the costs in both USD and CAD:</b></p>
+	<table>
+		<caption>Details</caption>
+		<tr>
+			<th>Game name</th>
+			<th>Type</th>
+			<th>Price in USD</th>
+			<th>Price in CAD</th>
+		</tr>
+		<tr>
+			<td>Call of duty warzone</td>
+			<td>Action</td>
+			<td>102$</td>
+			<td>136CAD</td>
+		</tr>
+		<tr>
+			<td>Assassin's creed mirage</td>
+			<td>Adventure</td>
+			<td>97$</td>
+			<td>130CAD</td>
+		</tr>
+		<tr>
+			<td>Sleeping dogs</td>
+			<td>Open world</td>
+			<td>60$</td>
+			<td>80CAD</td>
+		</tr>
+	</table>
+	<p><strong>A form you all should fill up:</strong></p> 
+	<form id="contact-form">
+		<label for="name">Name:</label>
+		<input type="text" id="name" name="name" minlength="3" required>
+
+	   <label for="email">Email:</label>
+		<input type="email" id="email" name="email" required>
+
+		<label for="netID">Net ID:</label>
+		<input type="text" id="netID" name="netID" required>
+
+		<label for="password">Password:</label>
+		<input type="text" id="password" name="password" required>
+
+		<label for="message">Message:</label>
+		<textarea id="message" name="message" required></textarea>
+
+		<button type="submit" onclick="submitForm(event)">Submit</button>
+   </form>
+   <script src="script.js"></script>
+</body>
+</html>
